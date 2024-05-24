@@ -3,7 +3,6 @@
 
 use std::collections::VecDeque;
 use std::io::{self, Error, Read, Write};
-use std::ops::Deref;
 use std::sync::Arc;
 use std::time::Duration;
 
