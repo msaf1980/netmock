@@ -14,9 +14,9 @@ default = []
 tokio = ["dep:tokio", "dep:futures-core"]
 
 [dependencies]
-tokio = { version = "1.37.0", features = ["io-util", "test-util"], optional = true }
+tokio = { version = "1", features = ["io-util", "test-util"], optional = true }
 futures-core = { version = "0.3.30", optional = true }
 
 [dev-dependencies]
-tokio-test = "0.4.4"
-tokio = { version = "1.37.0", features = ["io-util", "test-util", "macros"] }
+tokio-test = "0"
+tokio = { version = "1", features = ["io-util", "test-util", "macros"] }
