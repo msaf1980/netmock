@@ -1,0 +1,22 @@
+[package]
+name = "tokio-mockstream"
+version = "1.1.0"
+description = "A fake stream for testing network applications backed by buffers."
+authors = ["Aaron Weiss <awe@pdgn.co>"]
+license = "MIT/Apache-2.0"
+keywords = ["testing", "async"]
+repository = "https://github.com/aatxe/tokio-mockstream"
+readme = "README.md"
+edition = "2018"
+
+[features]
+default = []
+tokio = ["dep:tokio", "dep:futures-core"]
+
+[dependencies]
+tokio = { version = "1.37.0", features = ["io-util", "test-util"], optional = true }
+futures-core = { version = "0.3.30", optional = true }
+
+[dev-dependencies]
+tokio-test = "0.4.4"
+tokio = { version = "1.37.0", features = ["io-util", "test-util", "macros"] }
